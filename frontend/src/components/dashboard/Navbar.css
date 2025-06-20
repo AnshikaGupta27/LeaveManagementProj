@@ -1,0 +1,38 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    display: flex;
+    justify-content: space-between; /* <-- spreads items across */
+    align-items: center;
+    background-color: #0f766e;
+    color: white;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  .nav-title,
+  .nav-welcome {
+    white-space: nowrap;
+  }
+  
+  .nav-logout {
+    background-color: white;
+    color: #0d9488;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .nav-logout:hover {
+    background-color: #e0f2f1;
+  }
+  

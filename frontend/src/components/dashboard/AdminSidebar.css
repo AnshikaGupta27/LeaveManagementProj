@@ -1,0 +1,56 @@
+/* Sidebar Container */
+/* AdminSidebar.css */
+.admin-sidebar {
+  width: 250px;
+  height: calc(100vh - 56px); /* subtract navbar height */
+  position: fixed;
+  top: 56px; /* start right below navbar */
+  left: 0;
+  background-color: #1f2937;
+  color: white;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow-y: auto; /* scroll if content exceeds height */
+}
+
+
+
+  
+  /* Header */
+  .sidebar-header {
+    background-color: #0f766e; /* Tailwind's bg-teal-600 */
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  /* Individual nav item */
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #0d9488; /* Tailwind's bg-teal-500 */
+  }
+  .active-link {
+    background-color: #0f766e;  /* teal background */
+    color: white;
+    font-weight: bold;
+    border-left: 4px solid white; /* optional: add a left border to highlight */
+  }

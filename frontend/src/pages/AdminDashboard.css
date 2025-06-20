@@ -1,0 +1,28 @@
+/* Ensure the layout doesn't collapse */
+.admin-dashboard-container {
+  display: flex;
+}
+
+/* Main content offset for navbar and sidebar */
+.main-content {
+  margin-top: 56px;         /* navbar height */
+  margin-left: 250px;       /* sidebar width */
+  padding: 20px;
+  box-sizing: border-box;
+  width: calc(100% - 250px);
+  min-height: calc(100vh - 56px);
+}
+
+/* Sidebar fixed below navbar */
+.admin-sidebar {
+  position: fixed;
+  top: 56px;                /* push below navbar */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 56px);
+  background-color: #1f2937;
+  color: white;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}

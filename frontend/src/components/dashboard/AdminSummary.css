@@ -1,0 +1,37 @@
+.admin-summary {
+    padding: 24px;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .summary-grid,
+  .leave-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  .leave-section {
+    margin-top: 48px;
+  }
+  
+  .leave-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .summary-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .leave-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
